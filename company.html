@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Agrandir-WideLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Agrandir-TextBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Agrandir-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Agrandir-GrandHeavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Company</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1769671439512"></script>
+		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1769671439512"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1769671439512">
+		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1769671439512">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" data-fls-header-scroll="" data-fls-header-scroll-show="" class="header sticky top-0 right-0 left-0 z-50 bg-bgMain">
+				<div class="header__container flex gap-10 justify-between items-center py-6">
+					<a href="/" class="block shrink-0 basis-8 lg:basis-[183px] relative z-10">
+						<picture>
+							<img alt="Shadient.co" class="max-h-[43px] w-auto hidden lg:block" src="./assets/img/text-logo.webp">
+						</picture>
+						<picture>
+							<img alt="Shadient.co" class="max-h-[43px] w-auto lg:hidden" src="./assets/img/logo.webp">
+						</picture>
+					</a>
+					<div class="flex items-center justify-between gap-5 relative z-10">
+						<div class="header__menu menu">
+							<span></span>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="company" class="menu__link menu__link--active text-yellow-100">Company</a>
+									</li>
+									<li class="menu__item">
+										<a href="services" class="menu__link">Services</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Resources</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<a href="/" data-fls-button="" data-fls-popup-link="popup" class="inline-flex items-center justify-center text-sm uppercase py-2 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all">Button</a>
+						<button type="button" data-fls-menu="" class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<div data-fls-popup="popup" aria-hidden="true" class="popup">
+					<div data-fls-popup-wrapper="" class="popup__wrapper">
+						<div data-fls-popup-body="" class="popup__body bg-bgMain border border-yellow-100 rounded shadow-[0_6px_20px_rgba(0,0,0,0.2)]">
+							<button data-fls-popup-close="" type="button" class="popup__close">
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								</svg>
+							</button>
+							<div data-fls-popup-content="" class="popup__text">
+								<h4 class="mb-5 text-4xl text-center">Form</h4>
+								<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="flex flex-col gap-10 items-center">
+									<div class="flex flex-col gap-1 w-full">
+										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[20px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
+									</div>
+									<div class="flex flex-col gap-1 w-full">
+										<textarea data-fls-input="" data-fls-form-validatenow="" data-fls-input-autoheight="" required rows="5" autocomplete="off" type="text" name="form[]" data-fls-form-errtext="Enter message" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[20px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500 py-2 px-0"></textarea>
+									</div>
+									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit self-center">Button</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--home">
+				<div class="page__block">
+					<section data-fls-herosection="" class="md:pt-23 h-screen relative overflow-hidden">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/herosection/purple-shadow-600.webp" type="image/webp">
+							<img alt="Purple shadow" class="absolute right-0 top-0 max-h-[597px] z-[-1] shadow-pulse" src="./assets/img/herosection/purple-shadow.webp">
+						</picture>
+						<div class="hero__container justify-center flex flex-col h-full px-5 lg:px-0">
+							<p data-fls-watcher="" data-fls-watcher-once="" class="mb-4 font-bold text-base md:text-2xl text-yellow-100 label-item">About us</p>
+							<h1 data-fls-watcher="" data-fls-watcher-once="" class="leading-none text-white tracking-[0] font-normal mb-4 second-title title-item">Shadient.co</h1>
+							<p data-fls-watcher="" data-fls-watcher-once="" class="max-w-[523px] mb-8 text-white/60 description-item">
+								Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+							</p>
+							<button data-fls-watcher="" data-fls-watcher-once="" data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 bg-yellow-100 text-dark-100 rounded-[100px] hover:bg-bgMain hover:text-yellow-100 border border-transparent hover:border-yellow-100 duration-500 transition-all md:max-w-[111px] button-item">Button</button>
+						</div>
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/herosection/orange-shadow-600.webp" type="image/webp">
+							<img alt="Orange shadow" class="absolute bottom-0 left-0 max-h-[571px] z-[-1] shadow-pulse" src="./assets/img/herosection/orange-shadow.webp">
+						</picture>
+					</section>
+					<div class="page__container">
+						<section class="pt-[70px] pb-[66px]">
+							<div class="flex flex-col gap-[70px] max-w-[969px]">
+								<div data-fls-showmore="" class="flex flex-col gap-4">
+									<h2 data-fls-watcher="" data-fls-watcher-once="" class="font-bold text-[32px] text-white title-item">Company</h2>
+									<p data-fls-watcher="" data-fls-watcher-once="" data-fls-showmore-content="244" class="text-white/60 text-archivo h-fit description-item">
+										Commodo diam vulputate dui proin quis enim nibh. Non integer ac
+              libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at
+              eu elit. Morbi aliquam porttitor mattis consequat neque, tellus
+              blandit.Commodo diam vulputate dui proin quis enim nibh. Non
+              integer ac libero facilisis hendrerit a at. Nisi sem ut sed sed
+              faucibus at eu elit. Morbi aliquam porttitor mattis consequat
+              neque, tellus blandit. Commodo diam vulputate dui proin quis enim
+              nibh. Non integer ac libero facilisis hendrerit a at. Nisi sem ut
+              sed sed faucibus at eu elit. Morbi aliquam porttitor mattis
+              consequat neque, tellus blandit. Commodo diam vulputate dui proin
+              quis enim nibh. Non integer ac libero facilisis hendrerit a at.
+              Nisi sem ut sed sed faucibus at eu elit. Morbi aliquam porttitor
+              mattis consequat neque, tellus blandit.
+									</p>
+									<button hidden data-fls-showmore-button="" data-fls-watcher="" data-fls-watcher-once="" type="button" class="block__more text-start text-yellow-100/70 description-item">
+										<span>Showe More</span>
+										<span>Hide</span>
+									</button>
+								</div>
+								<div data-fls-showmore="" class="flex flex-col gap-4">
+									<h2 data-fls-watcher="" data-fls-watcher-once="" class="font-bold text-[32px] text-white title-item">Team</h2>
+									<p data-fls-watcher="" data-fls-watcher-once="" data-fls-showmore-content="244" class="text-white/60 text-archivo description-item">
+										Commodo diam vulputate dui proin quis enim nibh. Non integer ac
+              libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at
+              eu elit. Morbi aliquam porttitor mattis consequat neque, tellus
+              blandit.Commodo diam vulputate dui proin quis enim nibh. Non
+              integer ac libero facilisis hendrerit a at. Nisi sem ut sed sed
+              faucibus at eu elit. Morbi aliquam porttitor mattis consequat
+              neque, tellus blandit. Commodo diam vulputate dui proin quis enim
+              nibh. Non integer ac libero facilisis hendrerit a at. Nisi sem ut
+              sed sed faucibus at eu elit. Morbi aliquam porttitor mattis
+              consequat neque, tellus blandit. Commodo diam vulputate dui proin
+              quis enim nibh. Non integer ac libero facilisis hendrerit a at.
+              Nisi sem ut sed sed faucibus at eu elit. Morbi aliquam porttitor
+              mattis consequat neque, tellus blandit.
+									</p>
+									<button hidden data-fls-showmore-button="" data-fls-watcher="" data-fls-watcher-once="" type="button" class="block__more text-start text-yellow-100/70 description-item">
+										<span>Showe More</span>
+										<span>Hide</span>
+									</button>
+								</div>
+							</div>
+						</section>
+						<section class="bg-yellow-100 py-10 md:py-20 px-2 md:px-8 rounded">
+							<div class="text-center flex flex-col justify-center items-center h-full">
+								<h2 data-fls-watcher="" data-fls-watcher-once="" class="mb-4 main-title text-dark-200 title-item">Let’s discuss the idea</h2>
+								<p data-fls-watcher="" data-fls-watcher-once="" class="mb-6 text-black/60 max-w-[750px] text-sm md:text-base description-item">
+									Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
+      feugiat scelerisque in elit.
+								</p>
+								<form data-fls-watcher="" data-fls-watcher-once="" data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="flex flex-col md:flex-row gap-4 form-item">
+									<div class="flex flex-col gap-1 self-start">
+										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[30px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
+									</div>
+									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit">Button</button>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer pt-20 pb-10 flex flex-col gap-10 md:gap-20 relative">
+				<button data-fls-button="" data-fls-scrollto="main" href="/" class="inline-flex items-center justify-center p-5 text-yellow-100 rounded hover:text-white hover:bg-yellow-100 duration-500 transition-all border border-yellow-100 absolute top-16 right-4 xl:right-52 z-5 h-10 -translate-[5%]">
+					<span class="--icon-arrow max-h-5 rotate-90"></span>
+				</button>
+				<div class="footer__container flex-col-reverse lg:flex-row flex gap-10 md:gap-20 xl:gap-[125px] w-full">
+					<div data-fls-spollers="767.98" class="flex flex-col md:flex-row flex-wrap justify-between gap-10 xl:gap-[125px]">
+						<details class="">
+							<summary class="text-white items-center flex gap-4 xl:gap-0">
+								<h5 class="">Company</h5>
+								<span class="--icon-arrow rotate-270 transition-transform duration-100 block md:hidden text-lg xl:text-base"></span>
+							</summary>
+							<ul class="flex flex-col gap-6 font-archivo mt-6">
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base">About us</a>
+								</li>
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Team</a>
+								</li>
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Careers</a>
+								</li>
+							</ul>
+						</details>
+						<details class="">
+							<summary class="text-white items-center flex gap-4 xl:gap-0">
+								<h5 class="">Services</h5>
+								<span class="--icon-arrow rotate-270 transition-transform duration-100 block md:hidden text-lg xl:text-base"></span>
+							</summary>
+							<ul class="flex flex-col gap-6 font-archivo mt-6">
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Branding</a>
+								</li>
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Web development</a>
+								</li>
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Digital marketing</a>
+								</li>
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Mobile app</a>
+								</li>
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">SEO</a>
+								</li>
+								<li>
+									<a href="/services" class="hover:text-white transition-all duration-500 text-lg xl:text-base">User testing</a>
+								</li>
+							</ul>
+						</details>
+						<details class="">
+							<summary class="text-white items-center flex gap-4 xl:gap-0">
+								<h5 class="">Resources</h5>
+								<span class="--icon-arrow rotate-270 transition-transform duration-100 block md:hidden text-lg xl:text-base"></span>
+							</summary>
+							<ul class="flex flex-col gap-6 font-archivo mt-6">
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Blog</a>
+								</li>
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Case study</a>
+								</li>
+								<li>
+									<a data-fls-scrollto="#testimonials" href="#" class="hover:text-white transition-all duration-500 text-lg xl:text-base">Testimonials</a>
+								</li>
+							</ul>
+						</details>
+						<details class="">
+							<summary class="text-white items-center flex gap-4 xl:gap-0">
+								<h5 class="">Follow us</h5>
+								<span class="--icon-arrow rotate-270 transition-transform duration-100 block md:hidden text-lg xl:text-base"></span>
+							</summary>
+							<ul class="flex flex-col gap-6 font-archivo mt-6">
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base" target="_blank">Instagram</a>
+								</li>
+								<li>
+									<a href="/" class="hover:text-white transition-all duration-500 text-lg xl:text-base" target="_blank">Figma</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+					<div class="flex flex-col gap-6">
+						<div>
+							<a href="/" class="block shrink-0 basis-8 lg:basis-[183px] relative z-10">
+								<picture>
+									<img alt="Shadient.co" class="max-h-[43px] w-auto" src="./assets/img/text-logo.webp">
+								</picture>
+							</a>
+						</div>
+						<p class="text-sm">Get latest updates</p>
+						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="relative">
+							<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[30px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white text-sm bg-dark-50 text-gray-100">
+						</form>
+					</div>
+				</div>
+				<div class="text-white/60 text-center">Created by Shadient.co</div>
+			</footer>
+		</div>
+	</body>
+</html>
