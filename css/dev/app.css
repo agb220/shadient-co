@@ -593,10 +593,6 @@
     min-width: calc(var(--spacing) * 75);
   }
 
-  .min-w-\[18.75rem\] {
-    min-width: 18.75rem;
-  }
-
   .flex-1 {
     flex: 1;
   }
@@ -2325,12 +2321,12 @@ body::after {
       max-width: calc(var(--spacing) * 133);
     }
 
-    .lg\:min-w-\[11.4375rem\] {
-      min-width: 11.4375rem;
+    .lg\:min-w-103 {
+      min-width: calc(var(--spacing) * 103);
     }
 
-    .lg\:min-w-\[25.75rem\] {
-      min-width: 25.75rem;
+    .lg\:min-w-\[11.4375rem\] {
+      min-width: 11.4375rem;
     }
 
     .lg\:basis-\[11.4375rem\] {
