@@ -1,38 +1,5 @@
 import "./app.min.js";
 import "./offercard.min.js";
-const title = document.getElementById("hero-title");
-const text = title.dataset.text;
-const highlight = "NewLeads";
-const speed = 70;
-let index = 0;
-title.textContent = "";
-function type() {
-  if (index >= text.length) return;
-  if (text.startsWith(highlight, index)) {
-    const span = document.createElement("span");
-    span.className = "gradient-text";
-    span.textContent = highlight;
-    title.appendChild(span);
-    index += highlight.length;
-  } else {
-    title.append(text[index]);
-    index++;
-  }
-  setTimeout(type, speed);
-}
-const observer = new IntersectionObserver(
-  (entries, obs) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        type();
-        title.classList.add("--watcher-view");
-        obs.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.3 }
-);
-observer.observe(title);
 function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
 }
@@ -2145,9 +2112,9 @@ var isotopeExports = requireIsotope();
 const Isotope = /* @__PURE__ */ getDefaultExportFromCjs(isotopeExports);
 function masonryRun() {
   document.addEventListener("click", documentActions);
-  const isotope2 = document.querySelector("[data-fls-masonrycustom");
+  const isotope2 = document.querySelector("[data-fls-masonry]");
   const isotopeItems = new Isotope(isotope2, {
-    itemSelector: "[data-fls-masonrycustom-item]",
+    itemSelector: "[data-fls-masonry-item]",
     percentPosition: true,
     masonry: {
       // fitWidth: true,
@@ -2173,4 +2140,37 @@ function masonryRun() {
     }
   }
 }
-document.querySelector("[data-fls-masonrycustom]") ? window.addEventListener("load", masonryRun) : null;
+document.querySelector("[data-fls-masonry]") ? window.addEventListener("load", masonryRun) : null;
+const title = document.getElementById("hero-title");
+const text = title.dataset.text;
+const highlight = "NewLeads";
+const speed = 70;
+let index = 0;
+title.textContent = "";
+function type() {
+  if (index >= text.length) return;
+  if (text.startsWith(highlight, index)) {
+    const span = document.createElement("span");
+    span.className = "gradient-text";
+    span.textContent = highlight;
+    title.appendChild(span);
+    index += highlight.length;
+  } else {
+    title.append(text[index]);
+    index++;
+  }
+  setTimeout(type, speed);
+}
+const observer = new IntersectionObserver(
+  (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        type();
+        title.classList.add("--watcher-view");
+        obs.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+observer.observe(title);
