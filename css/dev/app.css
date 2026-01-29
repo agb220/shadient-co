@@ -566,6 +566,10 @@
     max-width: calc(var(--spacing) * 130);
   }
 
+  .max-w-158 {
+    max-width: calc(var(--spacing) * 158);
+  }
+
   .max-w-177 {
     max-width: calc(var(--spacing) * 177);
   }
@@ -576,10 +580,6 @@
 
   .max-w-245 {
     max-width: calc(var(--spacing) * 245);
-  }
-
-  .max-w-\[39.625rem\] {
-    max-width: 39.625rem;
   }
 
   .max-w-\[81.25rem\] {
@@ -2034,6 +2034,7 @@ body::after {
   position: fixed;
   top: 1/2;
   left: 0;
+  bottom: 0;
   right: 0;
   padding: 1.875rem 0.625rem;
   transition: visibility 0.8s ease 0s;
