@@ -81,6 +81,7 @@
     --leading-tight: 1.25;
     --leading-normal: 1.5;
     --radius-xl: .75rem;
+    --radius-2xl: 1rem;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -733,6 +734,10 @@
 
   .rounded {
     border-radius: .25rem;
+  }
+
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
 
   .rounded-\[6.25rem\] {
@@ -2320,12 +2325,12 @@ body::after {
       max-width: calc(var(--spacing) * 133);
     }
 
-    .lg\:min-w-103 {
-      min-width: calc(var(--spacing) * 103);
+    .lg\:min-w-46 {
+      min-width: calc(var(--spacing) * 46);
     }
 
-    .lg\:min-w-\[11.4375rem\] {
-      min-width: 11.4375rem;
+    .lg\:min-w-103 {
+      min-width: calc(var(--spacing) * 103);
     }
 
     .lg\:basis-\[11.4375rem\] {
@@ -2403,8 +2408,8 @@ body::after {
       width: 100vw;
     }
 
-    .xl\:max-w-\[25.75rem\] {
-      max-width: 25.75rem;
+    .xl\:max-w-103 {
+      max-width: calc(var(--spacing) * 103);
     }
 
     .xl\:min-w-159 {
