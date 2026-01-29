@@ -9,18 +9,18 @@
 		<link rel="preload" href="./assets/fonts/Agrandir-GrandHeavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1769675466748"></script>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1769708916537"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/offercard.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1769675466748">
-		<link rel="stylesheet" crossorigin="" href="./css/offercard.min.css?v=1769675466748">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1769675466748">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1769708916537">
+		<link rel="stylesheet" crossorigin="" href="./css/offercard.min.css?v=1769708916537">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1769708916537">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" data-fls-header-scroll="" data-fls-header-scroll-show="" class="header sticky top-0 right-0 left-0 z-50 bg-bgMain">
 				<div class="header__container flex gap-10 justify-between items-center py-6">
-					<a href="/" class="block shrink-0 basis-8 lg:basis-[183px] relative z-10">
+					<a href="/shadient-co/" class="block shrink-0 min-w-8 lg:min-w-[183px] relative z-10">
 						<picture>
 							<img alt="Shadient.co" class="max-h-[43px] w-auto hidden lg:block" src="./assets/img/text-logo.webp">
 						</picture>
@@ -51,34 +51,10 @@
 </each>
 </fetch>
 -->
-						<a href="/" data-fls-button="" data-fls-popup-link="popup" class="inline-flex items-center justify-center text-sm uppercase py-2 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all">Button</a>
+						<a href="/" data-fls-button="" data-fls-popup-link="popup" class="inline-flex items-center justify-center text-sm uppercase py-2 px-6 hover:bg-yellow-100 hover:text-dark-100 border-radius bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all">Button</a>
 						<button type="button" data-fls-menu="" class="icon-menu">
 							<span></span>
 						</button>
-					</div>
-				</div>
-				<div data-fls-popup="popup" aria-hidden="true" class="popup">
-					<div data-fls-popup-wrapper="" class="popup__wrapper">
-						<div data-fls-popup-body="" class="popup__body bg-bgMain border border-yellow-100 rounded shadow-[0_6px_20px_rgba(0,0,0,0.2)]">
-							<button data-fls-popup-close="" type="button" class="popup__close">
-								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
-									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
-								</svg>
-							</button>
-							<div data-fls-popup-content="" class="popup__text">
-								<h4 class="mb-5 text-4xl text-center">Form</h4>
-								<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="flex flex-col gap-10 items-center">
-									<div class="flex flex-col gap-1 w-full">
-										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[20px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
-									</div>
-									<div class="flex flex-col gap-1 w-full">
-										<textarea data-fls-input="" data-fls-form-validatenow="" data-fls-input-autoheight="" required rows="5" autocomplete="off" type="text" name="form[]" data-fls-form-errtext="Enter message" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[20px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500 py-2 px-0"></textarea>
-									</div>
-									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit self-center">Button</button>
-								</form>
-							</div>
-						</div>
 					</div>
 				</div>
 			</header>
@@ -89,22 +65,24 @@
 							<source media="(max-width: 600px)" srcset="./assets/img/herosection/purple-shadow-600.webp" type="image/webp">
 							<img alt="Purple shadow" class="absolute right-0 top-0 max-h-[597px] z-[-1] shadow-pulse" src="./assets/img/herosection/purple-shadow.webp">
 						</picture>
-						<div class="justify-center flex flex-col items-center h-full max-w-[706px] mx-auto px-5 lg:px-0">
-							<h1 class="leading-none text-white tracking-[0] font-normal mb-5 hero-title typewriter text-start self-start" data-fls-typetext="" id="hero-title" data-text="Attract NewLeads like never before">
-								Attract
-								<span class="gradient-text">NewLeads</span>
-								like never before
-							</h1>
-							<p data-fls-watcher="" data-fls-watcher-once="" class="leading-normal mb-10 text-sm lg:text-base hero-item">
-								Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
-      feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
-							</p>
-							<form data-fls-watcher="" data-fls-watcher-once="" class="flex flex-col md:flex-row gap-8 md:gap-5 w-full relative hero-item-form">
-								<div class="flex flex-col gap-1">
-									<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[30px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white text-sm bg-dark-50 text-gray-100 md:max-w-[320px]">
-								</div>
-								<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 bg-yellow-100 text-dark-100 rounded-[100px] hover:bg-bgMain hover:text-yellow-100 border border-transparent hover:border-yellow-100 duration-500 transition-all md:max-w-[111px]">Button</button>
-							</form>
+						<div class="section__container">
+							<div class="justify-center flex flex-col items-center h-full max-w-[706px] px-5 lg:px-0 mx-auto">
+								<h1 class="leading-none text-white tracking-[0] font-normal mb-5 hero-title typewriter text-start self-start" data-fls-typetext="" id="hero-title" data-text="Attract NewLeads like never before">
+									Attract
+									<span class="gradient-text">NewLeads</span>
+									like never before
+								</h1>
+								<p data-fls-watcher="" data-fls-watcher-once="" class="leading-normal mb-10 text-sm lg:text-base hero-item">
+									Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta
+        feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+								</p>
+								<form data-fls-watcher="" data-fls-watcher-once="" class="flex flex-col md:flex-row gap-8 md:gap-5 w-full relative hero-item-form">
+									<div class="flex flex-col gap-1">
+										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error" placeholder="Enter..." class="input focus:outline-none focus:ring-0 border-radius-30 border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white text-sm bg-dark-50 text-gray-100 md:max-w-[320px]">
+									</div>
+									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 bg-yellow-100 text-dark-100 border-radius hover:bg-bgMain hover:text-yellow-100 border border-transparent hover:border-yellow-100 duration-500 transition-all md:max-w-[111px]">Button</button>
+								</form>
+							</div>
 						</div>
 						<picture>
 							<source media="(max-width: 600px)" srcset="./assets/img/herosection/orange-shadow-600.webp" type="image/webp">
@@ -114,8 +92,8 @@
 					<div class="page__container">
 						<section data-fls-companiessection="" class="pt-10 lg:pt-20 pb-14 lg:pb-31">
 							<div class="flex gap-5 xl:gap-8 flex-col lg:flex-row mb-10 xl:mb-16">
-								<h2 data-fls-watcher="" data-fls-watcher-once="" class="main-title leading-[1.4] text-white title-item">Trusted by 200+ companies around the world</h2>
-								<p data-fls-watcher="" data-fls-watcher-once="" class="max-w-[470px] text-sm lg:text-base description-item">
+								<h2 data-fls-watcher="" data-fls-watcher-once="" class="main-title leading-[1.4] text-white title-item lg:min-w-[634px] font-archivo font-semibold">Trusted by 200+ companies around the world</h2>
+								<p data-fls-watcher="" data-fls-watcher-once="" class="text-sm lg:text-base description-item">
 									Vulputate molestie molestie amet leo blandit accumsan. Sapien sed amet
       tellus purus sit odio eget. Diam morbi faucibus vitae neque id in. Nullam
       sed et dapibus nunc, porta enim orci urna, sit. Lectus ac.
@@ -125,7 +103,7 @@
 							<div class="hidden xl:flex flex-col gap-5">
 								<!-- row right -->
 								<div class="overflow-x-auto xl:overflow-visible">
-									<ul data-fls-watcher="" data-fls-watcher-once="" class="flex gap-5 w-max xl:w-screen mr-[calc((100vw-(100vw-32px))/-2)] xl:mr-[calc((100vw-1300px)/-2)]">
+									<ul data-fls-watcher="" data-fls-watcher-once="" class="flex gap-5 w-max xl:w-screen companies-row companies-row--right">
 										<li class="shrink-0 rounded-xl border border-white/20 px-6 py-4 aspect-150/40 company-logo">
 											<picture>
 												<img alt="" class="max-h-10 w-auto" src="./assets/img/companies/comp1.webp">
@@ -165,7 +143,7 @@
 								</div>
 								<div class="overflow-x-auto xl:overflow-visible">
 									<!-- row left -->
-									<ul data-fls-watcher="" data-fls-watcher-once="" class="flex gap-5 w-max xl:w-screen ml-[calc((100vw-(100vw-32px))/-2)] xl:ml-[calc((100vw-1300px)/-2)]">
+									<ul data-fls-watcher="" data-fls-watcher-once="" class="flex gap-5 w-max xl:w-screen companies-row companies-row--left">
 										<li class="shrink-0 rounded-xl border border-white/20 px-6 py-4 aspect-150/40 company-logo">
 											<picture>
 												<img alt="" class="max-h-10 w-auto" src="./assets/img/companies/comp7.webp">
@@ -359,13 +337,13 @@
       facilisis hendrerit a at. Nisi sem ut sed sed faucibus at eu elit. Morbi
       aliquam porttitor mattis consequat neque, tellus blandit.
 								</p>
-								<button data-fls-watcher="" data-fls-watcher-once="" data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all lg:w-fit button-item">Button</button>
+								<button data-fls-watcher="" data-fls-watcher-once="" data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 border-radius bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all lg:w-fit button-item">Button</button>
 							</div>
-							<div class="w-full flex-1">
+							<div class="w-full flex-1 min-h-[260px] lg:min-h-[361px]">
 								<picture>
 									<source media="(max-width: 600px)" srcset="./assets/img/chosseus/man-600.webp" type="image/webp">
 									<source media="(max-width: 1200px)" srcset="./assets/img/chosseus/man-1200.webp" type="image/webp">
-									<img alt="Image" class="w-full h-full object-cover object-center min-h-[260px] lg:min-h-[361px]" src="./assets/img/chosseus/man.webp">
+									<img alt="Image" class="object-cover object-center w-full h-full" src="./assets/img/chosseus/man.webp">
 								</picture>
 							</div>
 						</section>
@@ -378,10 +356,10 @@
         feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna
         semper orci a tincidunt.
 									</p>
-									<a data-fls-watcher="" data-fls-watcher-once="" data-fls-button="" href="/" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all button-item">Show More</a>
+									<a data-fls-watcher="" data-fls-watcher-once="" data-fls-button="" href="/" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 border-radius bg-bgMain text-yellow-100 border hover:border-transparent border-yellow-100 duration-500 transition-all button-item">Show More</a>
 								</div>
-								<ul class="w-full items" data-fls-masonry="">
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+								<ul class="w-full items" data-fls-masonrycustom="">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="aspect-365/142 flex flex-col gap-3 max-h-[142px] w-auto overflow-hidden rounded">
 												<picture>
@@ -399,7 +377,7 @@
 											</a>
 										</article>
 									</li>
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="font-semibold font-archivo uppercase bg-yellow-100 w-fit py-2 px-4 text-xs rounded text-gray-200">Digital marketing</div>
 											<a href="/marketing">
@@ -411,7 +389,7 @@
 											</a>
 										</article>
 									</li>
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="aspect-365/142 flex flex-col gap-3 max-h-[142px] w-auto overflow-hidden rounded">
 												<picture>
@@ -429,7 +407,7 @@
 											</a>
 										</article>
 									</li>
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="font-semibold font-archivo uppercase bg-yellow-100 w-fit py-2 px-4 text-xs rounded text-gray-200">Branding</div>
 											<a href="/branding">
@@ -441,7 +419,7 @@
 											</a>
 										</article>
 									</li>
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="font-semibold font-archivo uppercase bg-yellow-100 w-fit py-2 px-4 text-xs rounded text-gray-200">DEVELOPMENT</div>
 											<a href="/development">
@@ -453,7 +431,7 @@
 											</a>
 										</article>
 									</li>
-									<li data-fls-workcard="" data-fls-masonry-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
+									<li data-fls-workcard="" data-fls-masonrycustom-item="" data-fls-watcher="" data-fls-watcher-once="" class="offer-padding border border-gray-100/50 rounded hover:bg-main-hover transition-all duration-500 p-4 lg:p-6 md:w-[calc(50%-16px)] w-full group h-fit mb-8 item works">
 										<article class="flex flex-col gap-6">
 											<div class="font-semibold font-archivo uppercase bg-yellow-100 w-fit py-2 px-4 text-xs rounded text-gray-200">SEO</div>
 											<a href="/seo">
@@ -556,12 +534,36 @@
 								</p>
 								<form data-fls-watcher="" data-fls-watcher-once="" data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="flex flex-col md:flex-row gap-4 form-item">
 									<div class="flex flex-col gap-1 self-start">
-										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[30px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
+										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 border-radius-30 border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
 									</div>
-									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 rounded-[100px] bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit">Button</button>
+									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 border-radius bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit">Button</button>
 								</form>
 							</div>
 						</section>
+					</div>
+				</div>
+				<div data-fls-popup="popup" aria-hidden="true" class="popup">
+					<div data-fls-popup-wrapper="" class="popup__wrapper">
+						<div data-fls-popup-body="" class="popup__body bg-bgMain border border-yellow-100 rounded shadow-[0_6px_20px_rgba(0,0,0,0.2)]">
+							<button data-fls-popup-close="" type="button" class="popup__close">
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								</svg>
+							</button>
+							<div data-fls-popup-content="" class="popup__text">
+								<h4 class="mb-5 text-4xl text-center">Form</h4>
+								<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="flex flex-col gap-10 items-center">
+									<div class="flex flex-col gap-1 w-full">
+										<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error email" placeholder="Enter..." class="input focus:outline-none focus:ring-0 border-radius-30 border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500">
+									</div>
+									<div class="flex flex-col gap-1 w-full">
+										<textarea data-fls-input="" data-fls-form-validatenow="" data-fls-input-autoheight="" required rows="5" autocomplete="off" type="text" name="form[]" data-fls-form-errtext="Enter message" placeholder="Enter..." class="input focus:outline-none focus:ring-0 border-radius-30 border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white bg-white placeholder:text-dark-100/50 text-dark-100/70 text-sm md:min-w-[320px] [data-fls-form-error]:text-red-500 py-2 px-0"></textarea>
+									</div>
+									<button data-fls-button="" class="inline-flex items-center justify-center text-sm uppercase py-3 px-6 hover:bg-yellow-100 hover:text-dark-100 border-radius bg-bgMain text-yellow-100 hover:border-dark-100 border-2 border-yellow-100 duration-500 transition-all md:w-fit self-center">Button</button>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -569,8 +571,8 @@
 				<button data-fls-button="" data-fls-scrollto="main" href="/" class="inline-flex items-center justify-center p-5 text-yellow-100 rounded hover:text-white hover:bg-yellow-100 duration-500 transition-all border border-yellow-100 absolute top-16 right-4 xl:right-52 z-5 h-10 -translate-[5%]">
 					<span class="--icon-arrow max-h-5 rotate-90"></span>
 				</button>
-				<div class="footer__container flex-col-reverse lg:flex-row flex gap-10 md:gap-20 xl:gap-[125px] w-full">
-					<div data-fls-spollers="767.98" class="flex flex-col md:flex-row flex-wrap justify-between gap-10 xl:gap-[125px]">
+				<div class="footer__container flex-col-reverse lg:flex-row flex gap-10 md:gap-20 xl:gap-31 w-full">
+					<div data-fls-spollers="767.98" class="flex flex-col md:flex-row flex-wrap justify-between gap-10 xl:gap-31">
 						<details class="">
 							<summary class="text-white items-center flex gap-4 xl:gap-0">
 								<h5 class="">Company</h5>
@@ -656,7 +658,7 @@
 						</div>
 						<p class="text-sm">Get latest updates</p>
 						<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="relative">
-							<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error" placeholder="Enter..." class="input focus:outline-none focus:ring-0 rounded-[30px] border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white text-sm bg-dark-50 text-gray-100">
+							<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="email" name="form[]" data-fls-form-errtext="Error" placeholder="Enter..." class="input focus:outline-none focus:ring-0 border-radius-30 border-2 border-[#a1aebf] hover:border-yellow-100 focus:border-white text-sm bg-dark-50 text-gray-100">
 						</form>
 					</div>
 				</div>
