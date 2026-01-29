@@ -569,16 +569,16 @@
     max-width: calc(var(--spacing) * 177);
   }
 
+  .max-w-188 {
+    max-width: calc(var(--spacing) * 188);
+  }
+
   .max-w-245 {
     max-width: calc(var(--spacing) * 245);
   }
 
   .max-w-\[39.625rem\] {
     max-width: 39.625rem;
-  }
-
-  .max-w-\[46.875rem\] {
-    max-width: 46.875rem;
   }
 
   .max-w-\[81.25rem\] {
@@ -2222,10 +2222,6 @@ body::after {
       width: 3.125rem;
     }
 
-    .md\:w-\[calc\(50\%-1rem\)\] {
-      width: calc(50% - 1rem);
-    }
-
     .md\:w-fit {
       width: fit-content;
     }
@@ -2295,6 +2291,9 @@ body::after {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
+  .work-card {
+    width: calc(50% - 1rem);
+  }
 }
 
 @media (min-width: 64rem){
