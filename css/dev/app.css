@@ -2425,6 +2425,10 @@ body::after {
       overflow: visible;
     }
 
+    .xl\:px-0 {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+
     .xl\:text-base {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
