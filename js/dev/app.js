@@ -632,7 +632,7 @@ function menuInit() {
     }
   });
 }
-document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
+menuInit();
 function headerScroll() {
   const header = document.querySelector("[data-fls-header-scroll]");
   const headerShow = header.hasAttribute("data-fls-header-scroll-show");
