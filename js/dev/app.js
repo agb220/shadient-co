@@ -625,15 +625,12 @@ class Popup {
 }
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
-  document.addEventListener("click", function(e) {
-    const menuBtn = e.target.closest("[data-fls-menu]");
-    if (!menuBtn) return;
+  const btn = document.querySelector("[data-fls-menu]");
+  if (!btn) return;
+  btn.addEventListener("click", (e) => {
     e.preventDefault();
-    e.stopPropagation();
-    if (bodyLockStatus) {
-      bodyLockToggle();
-      document.documentElement.toggleAttribute("data-fls-menu-open");
-    }
+    document.documentElement.toggleAttribute("data-fls-menu-open");
+    bodyLockToggle();
   });
 }
 menuInit();
