@@ -2023,7 +2023,7 @@ body::after {
   opacity: 0;
   transition: opacity 0.8s ease 0s;
   pointer-events: none;
-  z-index: 149;
+  z-index: 39;
 }
 
 [data-fls-popup-open] body::after {
@@ -2043,7 +2043,7 @@ body::after {
 }
 [data-fls-popup][data-fls-popup-active] {
   position: relative;
-  z-index: 150;
+  z-index: 40;
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
