@@ -626,11 +626,13 @@ class Popup {
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
   console.log("menu init");
+  if (window.__menuInited) return;
+  window.__menuInited = true;
   const btn = document.querySelector("[data-fls-menu]");
   if (!btn) return;
   btn.addEventListener("click", (e) => {
-    e.preventDefault();
     console.log("menu click");
+    e.preventDefault();
     document.documentElement.toggleAttribute("data-fls-menu-open");
     bodyLockToggle();
   });
