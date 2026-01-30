@@ -626,7 +626,11 @@ class Popup {
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
   document.addEventListener("click", function(e) {
-    if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
+    const menuBtn = e.target.closest("[data-fls-menu]");
+    if (!menuBtn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if (bodyLockStatus) {
       bodyLockToggle();
       document.documentElement.toggleAttribute("data-fls-menu-open");
     }
