@@ -625,11 +625,14 @@ class Popup {
 }
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
-  document.addEventListener("click", function(e) {
-    if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
-      bodyLockToggle();
-      document.documentElement.toggleAttribute("data-fls-menu-open");
-    }
+  if (window.__menuInited) return;
+  window.__menuInited = true;
+  const btn = document.querySelector("[data-fls-menu]");
+  if (!btn) return;
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.documentElement.toggleAttribute("data-fls-menu-open");
+    bodyLockToggle();
   });
 }
 menuInit();
