@@ -542,6 +542,10 @@
     max-height: 37.3125rem;
   }
 
+  .min-h-52 {
+    min-height: calc(var(--spacing) * 52);
+  }
+
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
   }
@@ -606,7 +610,7 @@
     flex-shrink: 0;
   }
 
-  .flex-grow {
+  .flex-grow, .grow {
     flex-grow: 1;
   }
 
